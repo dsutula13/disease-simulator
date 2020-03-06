@@ -1,0 +1,68 @@
+# Here are the settings for all aspects of the simulation. Make sure that the settings have no spaces.
+
+# The simulation-wide settings:
+# Coord scaling will change the size of the cells.
+COORD_SCALING=8
+
+# Choose whether you would like a data file generated. 1 for yes, 0 for no.
+CREATE_DATA_FILE=1
+
+# Choose the amount of days to simulate.
+SIMULATION_RUN_TIME=100
+
+# Choose whether to draw the cells. 1 for yes, 0 for no. The simulation runs way faster with this disabled.
+DRAW_SIMULATION=0
+
+# If set to 0, the simulation will ask to press enter with every step.
+RUN_SLOWLY=0
+
+# Choose what information to draw. 0 = infection, 1 = population.
+WHAT_TO_GRAPH=0
+
+# The city settings:
+# Default = 9000000
+URBAN_POPULATION=8896900
+
+# Default = 11000000
+SURROUNDING_POPULATION=2183100
+
+# Default = 1500
+URBAN_AREA=1500
+
+# Default = 8500
+SURROUNDING_AREA=8500
+
+# The disease settings:
+# How many people each person infects each day. This is just an indicator as the true value is randomised.
+SPREAD_RATE=3.25
+
+# People that die and recover combined. The infected population of a cell will be multiplied by this.
+REDUCTION_RATE=0.05
+
+# Proportion of the reduced population that will die.
+DEATH_RATE=0.11
+
+# Proportion of the reduced population that will recover.
+RECOVERY_RATE=0.89
+
+# Period of incubation, the value is randomly picked from this range.
+MIN_INCUBATION_PERIOD=2
+MAX_INCUBATION_PERIOD=14
+
+# Added on top of incubation period.
+RECOVERY_TIME=7
+
+# Fraction of people to quarantine.
+FRACTION_TO_QUARANTINE=0.98
+
+# How many days before quarantine kicks in?
+DAYS_BEFORE_QUARANTINE=7
+
+# The disease prevention methods settings:
+AMOUNT_OF_MASKS_TYPE_1=0
+AMOUNT_OF_MASKS_TYPE_2=0
+AMOUNT_OF_MASKS_TYPE_3=0
+
+MASK_1_INFECTION_PROBABILITY=0.85
+MASK_2_INFECTION_PROBABILITY=0.20
+MASK_3_INFECTION_PROBABILITY=0.05
